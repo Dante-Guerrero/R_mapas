@@ -3,7 +3,8 @@ title: "MAIN"
 ---
 
 ```{r include=FALSE, message=FALSE}
-source('auxiliares/cargador_mapas.R')
+source('auxiliares/primera_vez.R')
+load('data/mapas.RData')
 ```
 
 ## Graficando un mapa

@@ -1,44 +1,25 @@
-###############
-# BIBLIOTECAS #
-###############
-
-library(sf)
-library(dplyr)
-library(Hmisc)
-
-##########################
-# LISTA DE DEPARTAMENTOS #
-##########################
-
-departamentos <- c(
-  'amazonas',
-  'ancash',
-  'apurimac',
-  'arequipa',
-  'ayacucho',
-  'cajamarca',
-  'cusco',
-  'huancavelica',
-  'huanuco',
-  'ica',
-  'junin',
-  'lalibertad',
-  'lambayeque',
-  'lima',
-  'loreto',
-  'madrededios',
-  'moquegua',
-  'pasco',
-  'piura',
-  'puno',
-  'sanmartin',
-  'tacna',
-  'tumbes',
-  'ucayali'
-)
+###################################
+##-------------------------------##
+#|                               |#
+#| CARGAR MAPAS DESDE LOS .RDATA |#
+#|                               |#
+##-------------------------------##
+###################################
 
 ######################
-# CARGAR DEMARCACION #
+# CARGAR BIBLIOTECAS #
+######################
+
+source("auxiliares/bibliotecas.R")
+
+#########################################
+# CARGAR VARIABLES Y LISTAS RECURRENTES #
+#########################################
+
+source("auxiliares/variables_y_listas.R")
+
+######################
+# CARGAR DEMARCACION #  
 ######################
 
 load('data/mapas/demarcacion.RData')
@@ -135,56 +116,12 @@ mapas <- list(
   'red_vial_trochas' = red_vial_trochas
 )
 
-######################
-# ELIMINAR VARIABLES #
-######################
+save(mapas, file = 'data/mapas.RData')
 
-rm(
-  data,
-  lista,
-  carpeta,
-  departamentos,
-  i,
-  ubicacion_de_archivo,
-  amazonas,
-  ancash,
-  apurimac,
-  arequipa,
-  ayacucho,
-  cajamarca,
-  cusco,
-  huancavelica,
-  huanuco,
-  ica,
-  junin,
-  lalibertad,
-  lambayeque,
-  lima,
-  loreto,
-  madrededios,
-  moquegua,
-  pasco,
-  piura,
-  puno,
-  sanmartin,
-  tacna,
-  tumbes,
-  ucayali,
-  demarcacion_pais,
-  demarcacion_departamentos,
-  demarcacion_provincias,
-  demarcacion_distritos,
-  rios,
-  lagunas_glaciares,
-  lago_titicaca,
-  calles,
-  red_vial_nacional_lineas,
-  red_vial_nacional_puntos,
-  red_vial_departamental_lineas,
-  red_vial_departamental_puntos,
-  red_vial_vecinal_lineas,
-  red_vial_vecinal_puntos,
-  red_vial_trochas,
-  volcanes
-)
+####################
+# BORRAR VARIABLES #
+####################
+
+rm(list = ls())
+
 

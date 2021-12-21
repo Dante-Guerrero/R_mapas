@@ -9,3 +9,4 @@ insumos/*
 *.xml
 .RData
 .Rhistory
+data/mapas.RData
