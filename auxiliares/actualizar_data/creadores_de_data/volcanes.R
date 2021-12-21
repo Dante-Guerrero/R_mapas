@@ -1,6 +1,6 @@
 ## VOLCANES
 
-mx <- st_read("insumos/volcanes/geo.shp")
+mx <- st_read("data/insumos/volcanes/geo.shp")
 mx_data <- select(
   as.data.frame(mx), 
   NOMBRE,

@@ -3,7 +3,7 @@
 carpeta <- 'calles'
 
 for(i in departamentos){
-  ubicacion_de_archivo <- gsub(" ", "", paste('insumos/', carpeta, '/', i, '/geo.shp'))
+  ubicacion_de_archivo <- gsub(" ", "", paste('data/insumos/', carpeta, '/', i, '/geo.shp'))
   mx <- st_read(ubicacion_de_archivo)
   mx_data <- select(
     as.data.frame(mx), 

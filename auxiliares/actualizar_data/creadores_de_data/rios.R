@@ -3,7 +3,7 @@
 carpeta <- 'rios'
 
 for(i in departamentos){
-  ubicacion_de_archivo <- gsub(" ", "", paste('insumos/', carpeta, '/', i, '/geo.shp'))
+  ubicacion_de_archivo <- gsub(" ", "", paste('data/insumos/', carpeta, '/', i, '/geo.shp'))
   mx <- st_read(ubicacion_de_archivo)
   mx_data <- select(
     as.data.frame(mx), 
@@ -45,3 +45,4 @@ save(sanmartin, file = gsub(" ", "", paste('data/mapas/', carpeta, '/sanmartin.R
 save(tacna, file = gsub(" ", "", paste('data/mapas/', carpeta, '/tacna.RData')))
 save(tumbes, file = gsub(" ", "", paste('data/mapas/', carpeta, '/tumbes.RData')))
 save(ucayali, file = gsub(" ", "", paste('data/mapas/', carpeta, '/ucayali.RData')))
+

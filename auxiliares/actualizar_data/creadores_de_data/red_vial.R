@@ -8,7 +8,7 @@
 
 # LINEAS
 
-mx <- st_read("insumos/red_vial/red_vial_nacional/lineas/geo.shp")
+mx <- st_read("data/insumos/red_vial/red_vial_nacional/lineas/geo.shp")
 mx_data <- select(
   as.data.frame(mx),
   RUTA = cCodRuta,
@@ -26,7 +26,7 @@ red_vial_nacional_lineas <- st_sf(mx_data, geometry = mx_geom)
 
 # PUNTOS
 
-mx <- st_read("insumos/red_vial/red_vial_nacional/puntos/geo.shp")
+mx <- st_read("data/insumos/red_vial/red_vial_nacional/puntos/geo.shp")
 mx_data <- select(
   as.data.frame(mx),
   COD_RUTA,
@@ -50,7 +50,7 @@ save(
 
 # LINEAS
 
-mx <- st_read("insumos/red_vial/red_vial_departamental/lineas/geo.shp")
+mx <- st_read("data/insumos/red_vial/red_vial_departamental/lineas/geo.shp")
 mx_data <- select(
   as.data.frame(mx),
   COD_DS11,
@@ -120,7 +120,7 @@ save(ucayali, file = gsub(" ", "", paste('data/mapas/', carpeta, '/ucayali.RData
 
 # PUNTOS
 
-mx <- st_read("insumos/red_vial/red_vial_departamental/puntos/geo.shp")
+mx <- st_read("data/insumos/red_vial/red_vial_departamental/puntos/geo.shp")
 mx_data <- select(
   as.data.frame(mx),
   COD_RUTA,
@@ -142,7 +142,7 @@ save(red_vial_departamental_puntos, file = 'data/mapas/red_vial_departamental_pu
 
 # LINEAS
 
-mx <- st_read("insumos/red_vial/red_vial_vecinal/lineas/geo.shp")
+mx <- st_read("data/insumos/red_vial/red_vial_vecinal/lineas/geo.shp")
 mx_data <- select(
   as.data.frame(mx),
   COD_DS11,
@@ -212,7 +212,7 @@ save(ucayali, file = gsub(" ", "", paste('data/mapas/', carpeta, '/ucayali.RData
 
 # PUNTOS
 
-mx <- st_read("insumos/red_vial/red_vial_vecinal/puntos/geo.shp")
+mx <- st_read("data/insumos/red_vial/red_vial_vecinal/puntos/geo.shp")
 mx_data <- select(
   as.data.frame(mx),
   COD_RUTA,
@@ -235,7 +235,7 @@ save(
 
 ## TROCHAS
 
-mx <- st_read("insumos/red_vial/trochas/geo.shp")
+mx <- st_read("data/insumos/red_vial/trochas/geo.shp")
 mx_data <- select(
   as.data.frame(mx),
   ESTADO = estado,
