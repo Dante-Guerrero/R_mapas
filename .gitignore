@@ -1,4 +1,4 @@
-insumos/*
+data/insumos/*
 *.cpg
 *.dbf
 *.prj
