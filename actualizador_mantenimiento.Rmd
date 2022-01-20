@@ -1,0 +1,22 @@
+---
+title: "Actualizador"
+---
+
+# Descargar carpeta de insumos
+
+```{r}
+source("auxiliares/actualizar_data/descargar_insumos.R")
+```
+
+# Crear nuevos archivos .RData de mapas
+
+```{r}
+source("auxiliares/actualizar_data/creador_de_data_desde_insumos.R")
+```
+
+# Cargar nueva versión de insumos
+
+```{r}
+source("auxiliares/actualizar_data/actualizar_insumos.R")
+```
+

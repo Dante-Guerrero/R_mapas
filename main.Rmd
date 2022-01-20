@@ -3,21 +3,50 @@ title: "MAIN"
 ---
 
 ```{r include=FALSE, message=FALSE}
-source('auxiliares/primera_vez.R')
-load('data/mapas.RData')
+source('auxiliares/comprobar_mapas.R')
+
 ```
 
 ## Graficando un mapa
 
-```{r fig, fig.height = 5, fig.width = 5, fig.align = "center"}
+```{r fig, fig.height = 8, fig.width = 8, fig.align = "center"}
 
-graph <- ggplot(data=mapas$departamentos)+
+library(sf)
+library(ggplot2)
+library(ggrepel)
+library(dplyr)
+library(tidyverse)
+
+mapa <- mapas$departamentos
+mapa_c <- st_centroid(mapa) 
+mapa_c <- mapa_c %>% 
+  mutate(
+    lng = unlist(map(mapa_c$geometry,1)),
+    lat = unlist(map(mapa_c$geometry,2)),
+    nudge_lng = ifelse(mapa_c$lng<(-75), -5, +5)
+    )
+
+graph <- ggplot(data=mapa, aes())+
   geom_sf(color="black", fill="greenyellow")+
-  ggtitle('PERÚ')+
-  theme(plot.title = element_text(hjust = 0.5))+
-  geom_sf(data = mapas$lago_titicaca, color='black', fill='lightblue')
+  ggtitle('Mapa del Perú')+
+  #theme_void()+
+  theme(
+    plot.title = element_text(hjust = 0.5)
+    )+
+  geom_sf(data = mapas$lago_titicaca, color='black', fill='lightblue')+
+  geom_sf(data = mapa_c, color = 'red')+
+  geom_text_repel(
+    data= mapa_c, aes(x = lng, y = lat, label=DEPARTAMENTO),
+    fontface = "bold", 
+    size = 3,
+    force = 1,
+    nudge_x = mapa_c$nudge_lng,
+    direction = "both"
+    )
 graph
-```
+
+para ```
+
 
 ```{r}
 
@@ -28,7 +57,7 @@ md <- mapas$distritos %>%
 
 cd <- mapas$calles %>% 
   mutate(
-    ubigeo = paste(cd$DEPARTAMENTO,"-", cd$PROVINCIA,"-", cd$DISTRITO)
+    ubigeo = paste(cd$DEPARTAMENTO,"-", cd$PROVINCIA,"-", cd$DISTR
   )
 
 ubigeo <- intersect(md$ubigeo, cd$ubigeo)
