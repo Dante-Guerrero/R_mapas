@@ -22,30 +22,98 @@ mapa_c <- st_centroid(mapa)
 mapa_c <- mapa_c %>% 
   mutate(
     lng = unlist(map(mapa_c$geometry,1)),
-    lat = unlist(map(mapa_c$geometry,2)),
-    nudge_lng = ifelse(mapa_c$lng<(-75), -5, +5)
+    lat = unlist(map(mapa_c$geometry,2))
     )
+
+n_lng <- c(
+-80, # AMAZONAS
+-82, # ANCASH
+-67, # APURIMAC
+-72, # AREQUIPA
+-74, # AYACUCHO
+-84, # CAJAMARCA
+-80, # CALLAO
+-68, # CUSCO
+-79, # HUANCAVELICA
+-72, # HUANUCO
+-76, # ICA
+-78, # JUNIN
+-83, # LA LIBERTAD
+-84, # LAMBAYEQUE
+-81, # LIMA
+-71, # LORETO
+-67, # MADRE DE DIOS
+-67, # MOQUEGUA
+-81, # PASCO
+-84, # PIURA
+-66.5, # PUNO
+-70, # SAN MARTIN
+-68, # TACNA
+-82, # TUMBES
+-69 # UCAYALI
+)
+
+n_lat <- c(
+-2, # AMAZONAS
+-9, # ANCASH
+-13, # APURIMAC
+-19, # AREQUIPA
+-18, # AYACUCHO
+-5.5, # CAJAMARCA
+-11.9, # CALLAO
+-11.5, # CUSCO
+-15, # HUANCAVELICA
+-8, # HUANUCO
+-17, # ICA
+-13, # JUNIN
+-7.8, # LA LIBERTAD
+-6.5, # LAMBAYEQUE
+-11, # LIMA
+-1, # LORETO
+-10, # MADRE DE DIOS
+-17, # MOQUEGUA
+-10, # PASCO
+-4, # PIURA
+-15, # PUNO
+-5, # SAN MARTIN
+-18, # TACNA
+-2.5, # TUMBES
+-8 # UCAYALI
+)
+
+mapa_c <- mapa_c %>% 
+  mutate(
+    nudge_lng = n_lng - mapa_c$lng,
+    nudge_lat = n_lat - mapa_c$lat
+      )
 
 graph <- ggplot(data=mapa, aes())+
   geom_sf(color="black", fill="greenyellow")+
-  ggtitle('Mapa del Perú')+
-  #theme_void()+
+  ggtitle('MAPA DEL PERÚ')+
+  theme_void()+
   theme(
     plot.title = element_text(hjust = 0.5)
     )+
   geom_sf(data = mapas$lago_titicaca, color='black', fill='lightblue')+
-  geom_sf(data = mapa_c, color = 'red')+
+  geom_sf(data = mapa_c, color = 'black')+
   geom_text_repel(
     data= mapa_c, aes(x = lng, y = lat, label=DEPARTAMENTO),
     fontface = "bold", 
     size = 3,
-    force = 1,
+    #box.padding = 0.5,
+    #force = 250,
+    #force_pull = 1,
     nudge_x = mapa_c$nudge_lng,
-    direction = "both"
-    )
+    nudge_y = mapa_c$nudge_lat,
+    direction = "both",
+    segment.curvature = -1e-20,
+    segment.ncp = 5,
+    segment.angle = 30
+    )+
+  expand_limits(x = c(-85,-66), y = c(0,-19))
 graph
 
-para ```
+```
 
 
 ```{r}
