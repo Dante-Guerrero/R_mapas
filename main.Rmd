@@ -17,7 +17,77 @@ library(ggrepel)
 library(dplyr)
 library(tidyverse)
 
-mapa <- mapas$departamentos
+n_lng <- c(
+-80, # OD AMAZONAS
+-82, # OD ANCASH
+-73.5, # OD APURIMAC
+-71, # OD AREQUIPA
+-78, # OD AYACUCHO
+-84, # OD CAJAMARCA
+-68, # OD CUSCO
+-80, # OD HUANCAVELICA
+-72, # OD HUANUCO
+-76, # OD ICA
+-79, # OD JUNIN
+-83, # OD LA LIBERTAD
+-84, # OD LAMBAYEQUE
+-70, # OD LORETO
+-67, # OD MADRE DE DIOS
+-67, # OD MOQUEGUA
+-81, # OD PASCO
+-84, # OD PIURA
+-66.5, # OD PUNO
+-70, # OD SAN MARTIN
+-68, # OD TACNA
+-82, # OD TUMBES
+-69, # OD UCAYALI
+-80, # OD VRAEM
+-82, # OE CHIMBOTE
+-76, # OE CORACORA
+-66, # OE COTABAMBAS
+-67, # OE ESPINAR
+-69, # OE LA CONVENCION
+-70, # OE PICHANAKI
+-81 # OFICINA CENTRAL
+)
+
+n_lat <- c(
+-2, # OD AMAZONAS
+-9.5, # OD ANCASH
+-18, # OD APURIMAC
+-19, # OD AREQUIPA
+-14, # OD AYACUCHO
+-7, # OD CAJAMARCA
+-11.5, # OD CUSCO
+-13, # OD HUANCAVELICA
+-8, # OD HUANUCO
+-16, # OD ICA
+-11, # OD JUNIN
+-7.8, # OD LA LIBERTAD
+-5.5, # OD LAMBAYEQUE
+-1.5, # OD LORETO
+-10, # OD MADRE DE DIOS
+-17, # OD MOQUEGUA
+-10.5, # OD PASCO
+-4, # OD PIURA
+-15, # OD PUNO
+-6, # OD SAN MARTIN
+-18, # OD TACNA
+-2.5, # OD TUMBES
+-8, # OD UCAYALI
+-12.5, # OD VRAEM
+-9, # OE CHIMBOTE
+-17, # OE CORACORA
+-13.5, # OE COTABAMBAS
+-14.5, # OE ESPINAR
+-9, # OE LA CONVENCION
+-1, # OE PICHANAKI
+-11.5 # OFICINA CENTRAL
+)
+
+mapa <- mapas$od
+mapa <- mapa[order(mapa$ABREV_OD),]
+
 mapa_c <- st_centroid(mapa) 
 mapa_c <- mapa_c %>% 
   mutate(
@@ -25,83 +95,30 @@ mapa_c <- mapa_c %>%
     lat = unlist(map(mapa_c$geometry,2))
     )
 
-n_lng <- c(
--80, # AMAZONAS
--82, # ANCASH
--67, # APURIMAC
--72, # AREQUIPA
--74, # AYACUCHO
--84, # CAJAMARCA
--80, # CALLAO
--68, # CUSCO
--79, # HUANCAVELICA
--72, # HUANUCO
--76, # ICA
--78, # JUNIN
--83, # LA LIBERTAD
--84, # LAMBAYEQUE
--81, # LIMA
--71, # LORETO
--67, # MADRE DE DIOS
--67, # MOQUEGUA
--81, # PASCO
--84, # PIURA
--66.5, # PUNO
--70, # SAN MARTIN
--68, # TACNA
--82, # TUMBES
--69 # UCAYALI
-)
-
-n_lat <- c(
--2, # AMAZONAS
--9, # ANCASH
--13, # APURIMAC
--19, # AREQUIPA
--18, # AYACUCHO
--5.5, # CAJAMARCA
--11.9, # CALLAO
--11.5, # CUSCO
--15, # HUANCAVELICA
--8, # HUANUCO
--17, # ICA
--13, # JUNIN
--7.8, # LA LIBERTAD
--6.5, # LAMBAYEQUE
--11, # LIMA
--1, # LORETO
--10, # MADRE DE DIOS
--17, # MOQUEGUA
--10, # PASCO
--4, # PIURA
--15, # PUNO
--5, # SAN MARTIN
--18, # TACNA
--2.5, # TUMBES
--8 # UCAYALI
-)
-
 mapa_c <- mapa_c %>% 
   mutate(
+    n_lng = n_lng,
+    n_lat = n_lat,
     nudge_lng = n_lng - mapa_c$lng,
     nudge_lat = n_lat - mapa_c$lat
       )
 
 graph <- ggplot(data=mapa, aes())+
-  geom_sf(color="black", fill="greenyellow")+
-  ggtitle('MAPA DEL PERÚ')+
+  geom_sf(color="grey", fill="white")+
+  ggtitle('MAPA DEL PERÚ - DEMARCACIÓN TERRITORIAL POR ODE')+
   theme_void()+
   theme(
     plot.title = element_text(hjust = 0.5)
     )+
   geom_sf(data = mapas$lago_titicaca, color='black', fill='lightblue')+
-  geom_sf(data = mapa_c, color = 'black')+
+  geom_sf(data = mapa_c, color = 'red')+
   geom_text_repel(
-    data= mapa_c, aes(x = lng, y = lat, label=DEPARTAMENTO),
+    data= mapa_c, aes(x = lng, y = lat, label=ABREV_OD),
+    color='black',
     fontface = "bold", 
     size = 3,
     #box.padding = 0.5,
-    #force = 250,
+    #force = 1,
     #force_pull = 1,
     nudge_x = mapa_c$nudge_lng,
     nudge_y = mapa_c$nudge_lat,
@@ -116,61 +133,15 @@ graph
 ```
 
 
-```{r}
-
-md <- mapas$distritos %>% 
-  mutate(
-    ubigeo = paste(md$DEPARTAMENTO,"-", md$PROVINCIA,"-", md$DISTRITO)
-  )
-
-cd <- mapas$calles %>% 
-  mutate(
-    ubigeo = paste(cd$DEPARTAMENTO,"-", cd$PROVINCIA,"-", cd$DISTR
-  )
-
-ubigeo <- intersect(md$ubigeo, cd$ubigeo)
-sort(ubigeo)
-length(ubigeo)
-
-```
-
-```{r}
-departamentos_coincidencia <- intersect(mapas$distritos$DEPARTAMENTO, mapas$calles$DEPARTAMENTO)
-departamentos_coincidencia
-```
-```{r}
-provincias_coincidencia <- intersect(mapas$distritos$PROVINCIA, mapas$calles$PROVINCIA)
-provincias_diferencia_distritos <- setdiff(mapas$distritos$PROVINCIA, mapas$calles$PROVINCIA)
-provincias_diferencia_distritos
-provincias_diferencia_calles <- setdiff(mapas$calles$PROVINCIA, mapas$distritos$PROVINCIA)
-provincias_diferencia_calles
-
-
-```
-
-```{r}
-
-distritos <- mapas$distritos
-
-distritos$PROVINCIA[distritos$PROVINCIA == "MARAÑ\u0091ON"] <- "MARAÑON"
-
-distritos
-
-```
 
 
 
-```{r}
-for(value in ubigeo){
-  puntos <- filter(
-    rr_sfp,
-    rr_UBIGEO== value
-  )
-  
-  plot(st_geometry(md[md_ubigeo==value,]), axes=T, main=value, cex.axis=0.5)
-  plot(st_geometry(puntos), add = TRUE,col="red", fill="red")
-}
-```
+
+
+
+
+
+
 
 
 
