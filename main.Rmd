@@ -116,61 +116,8 @@ graph
 ```
 
 
-```{r}
-
-md <- mapas$distritos %>% 
-  mutate(
-    ubigeo = paste(md$DEPARTAMENTO,"-", md$PROVINCIA,"-", md$DISTRITO)
-  )
-
-cd <- mapas$calles %>% 
-  mutate(
-    ubigeo = paste(cd$DEPARTAMENTO,"-", cd$PROVINCIA,"-", cd$DISTR
-  )
-
-ubigeo <- intersect(md$ubigeo, cd$ubigeo)
-sort(ubigeo)
-length(ubigeo)
-
-```
-
-```{r}
-departamentos_coincidencia <- intersect(mapas$distritos$DEPARTAMENTO, mapas$calles$DEPARTAMENTO)
-departamentos_coincidencia
-```
-```{r}
-provincias_coincidencia <- intersect(mapas$distritos$PROVINCIA, mapas$calles$PROVINCIA)
-provincias_diferencia_distritos <- setdiff(mapas$distritos$PROVINCIA, mapas$calles$PROVINCIA)
-provincias_diferencia_distritos
-provincias_diferencia_calles <- setdiff(mapas$calles$PROVINCIA, mapas$distritos$PROVINCIA)
-provincias_diferencia_calles
 
 
-```
-
-```{r}
-
-distritos <- mapas$distritos
-
-distritos$PROVINCIA[distritos$PROVINCIA == "MARAÑ\u0091ON"] <- "MARAÑON"
-
-distritos
-
-```
-
-
-
-```{r}
-for(value in ubigeo){
-  puntos <- filter(
-    rr_sfp,
-    rr_UBIGEO== value
-  )
-  
-  plot(st_geometry(md[md_ubigeo==value,]), axes=T, main=value, cex.axis=0.5)
-  plot(st_geometry(puntos), add = TRUE,col="red", fill="red")
-}
-```
 
 
 
