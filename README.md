@@ -87,55 +87,55 @@ R_mapas
 |   |   |   |
 |   |   |   +-- zonas_reservadas
 |   |   |   |   +-- geo.cpg
-|	|	|	|   +-- geo.dbf
-|	|	|	|   +-- geo.lyr
-|	|	|	|   +-- geo.prj
-|	|	|	|   +-- geo.sbn
-|	|	|	|   +-- geo.sbx
-|	|	|	|   +-- geo.shp
-|	|	|	|   +-- geo.shx
-|	|	|	|   +-- geo.xml
-|	|	|	|
-|	|	|	+-- zonificacion_de_ACP
-|	|	|	|   +-- geo.cpg
-|	|	|	|   +-- geo.dbf
-|	|	|	|   +-- geo.lyr
-|	|	|	|   +-- geo.prj
-|	|	|	|   +-- geo.sbn
-|	|	|	|   +-- geo.sbx
-|	|	|	|   +-- geo.shp
-|	|	|	|   +-- geo.shx
-|	|	|	|   +-- geo.xml
-|	|	|	|
-|	|	|	+-- zonificacion_de_ACR
-|	|	|	|   +-- geo.cpg
-|	|	|	|   +-- geo.dbf
-|	|	|	|   +-- geo.lyr
-|	|	|	|   +-- geo.prj
-|	|	|	|   +-- geo.sbn
-|	|	|	|   +-- geo.sbx
-|	|	|	|   +-- geo.shp
-|	|	|	|   +-- geo.shx
-|	|	|	|   +-- geo.xml
-|	|	|	|
+|   |   |   |   +-- geo.dbf
+|   |   |   |   +-- geo.lyr
+|   |   |   |   +-- geo.prj
+|   |   |   |   +-- geo.sbn
+|   |   |   |   +-- geo.sbx
+|   |   |   |   +-- geo.shp
+|   |   |   |   +-- geo.shx
+|   |   |   |   +-- geo.xml
+|   |   |   |
+|   |   |   +-- zonificacion_de_ACP
+|   |   |   |   +-- geo.cpg
+|   |   |   |   +-- geo.dbf
+|   |   |   |   +-- geo.lyr
+|   |   |   |   +-- geo.prj
+|   |   |   |   +-- geo.sbn
+|   |   |   |   +-- geo.sbx
+|   |   |   |   +-- geo.shp
+|   |   |   |   +-- geo.shx
+|   |   |   |   +-- geo.xml
+|   |   |   |
+|   |   |   +-- zonificacion_de_ACR
+|   |   |   |   +-- geo.cpg
+|   |   |   |   +-- geo.dbf
+|   |   |   |   +-- geo.lyr
+|   |   |   |   +-- geo.prj
+|   |   |   |   +-- geo.sbn
+|   |   |   |   +-- geo.sbx
+|   |   |   |   +-- geo.shp
+|   |   |   |   +-- geo.shx
+|   |   |   |   +-- geo.xml
+|   |   |   |
 |	|	|	+-- zonificacion_de_ANP
-|	|	|       +-- geo.cpg
-|	|	|       +-- geo.dbf
-|	|	|       +-- geo.lyr
-|	|	|       +-- geo.prj
-|	|	|       +-- geo.sbn
-|	|	|       +-- geo.sbx
-|	|	|       +-- geo.shp
-|	|	|       +-- geo.shx
-|	|	|       +-- geo.xml
-|	|	|
+|   |   |   |   +-- geo.cpg
+|   |   |   |   +-- geo.dbf
+|   |   |   |   +-- geo.lyr
+|   |   |   |   +-- geo.prj
+|   |   |   |   +-- geo.sbn
+|   |   |   |   +-- geo.sbx
+|   |   |   |   +-- geo.shp
+|   |   |   |   +-- geo.shx
+|   |   |   |   +-- geo.xml
+|   |   |   |
 |   |   +-- bosques_de_produccion_permanente
-|	|	|   +-- geo.dbf
-|	|	|   +-- geo.prj
-|	|	|   +-- geo.qpj
-|	|	|   +-- geo.shp
-|	|	|   +-- geo.shx
-|	|	|	
+|   |   |   +-- geo.dbf
+|   |   |   +-- geo.prj
+|   |   |   +-- geo.qpj
+|   |   |   +-- geo.shp
+|   |   |   +-- geo.shx
+|   |   |	
 |   |   +-- calles
 |   |   |   +-- amazonas
 |   |   |   |   +-- geo.cpg
