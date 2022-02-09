@@ -118,7 +118,7 @@ R_mapas
 |   |   |   |   +-- geo.shx
 |   |   |   |   +-- geo.xml
 |   |   |   |
-|	|	|	+-- zonificacion_de_ANP
+|   |   |   +-- zonificacion_de_ANP
 |   |   |   |   +-- geo.cpg
 |   |   |   |   +-- geo.dbf
 |   |   |   |   +-- geo.lyr
@@ -379,79 +379,79 @@ R_mapas
 |   |   |   
 |   |   +-- demarcacion
 |   |   |   +-- departamentos
-|	|	|	|   +-- geo.cpg
-|	|	|	|   +-- geo.dbf
-|	|	|	|   +-- geo.prj
-|	|	|	|   +-- geo.shp
-|	|	|	|   +-- geo.shx
-|	|	|	|   +-- geo.xml
-|	|	|	|
+|   |   |   |   +-- geo.cpg
+|   |   |   |   +-- geo.dbf
+|   |   |   |   +-- geo.prj
+|   |   |   |   +-- geo.shp
+|   |   |   |   +-- geo.shx
+|   |   |   |   +-- geo.xml
+|   |   |   |
 |   |   |   +-- distritos
-|	|	|	|   +-- geo.cpg
-|	|	|	|   +-- geo.dbf
-|	|	|	|   +-- geo.prj
-|	|	|	|   +-- geo.sbn
-|	|	|	|   +-- geo.sbx
-|	|	|	|   +-- geo.shp
-|	|	|	|   +-- geo.shx
-|	|	|	|
+|   |   |   |   +-- geo.cpg
+|   |   |   |   +-- geo.dbf
+|   |   |   |   +-- geo.prj
+|   |   |   |   +-- geo.sbn
+|   |   |   |   +-- geo.sbx
+|   |   |   |   +-- geo.shp
+|   |   |   |   +-- geo.shx
+|   |   |   |
 |   |   |   +-- pais
-|	|	|	|   +-- geo.cpg
-|	|	|	|   +-- geo.dbf
-|	|	|	|   +-- geo.prj
-|	|	|	|   +-- geo.shp
-|	|	|	|   +-- geo.shx
-|	|	|	|
+|   |   |   |   +-- geo.cpg
+|   |   |   |   +-- geo.dbf
+|   |   |   |   +-- geo.prj
+|   |   |   |   +-- geo.shp
+|   |   |   |   +-- geo.shx
+|   |   |   |
 |   |   |   +-- provincias
-|	|	|       +-- geo.cpg
-|	|	|       +-- geo.dbf
-|	|	|       +-- geo.prj
-|	|	|       +-- geo.shp
-|	|	|       +-- geo.shx
-|	|	|       +-- geo.xml
-|	|	|	
+|   |   |       +-- geo.cpg
+|   |   |       +-- geo.dbf
+|   |   |       +-- geo.prj
+|   |   |       +-- geo.shp
+|   |   |       +-- geo.shx
+|   |   |       +-- geo.xml
+|   |   |	
 |   |   +-- lago_titicaca
-|	|	|   +-- geo.cpg
-|	|	|   +-- geo.dbf
-|	|	|   +-- geo.prj
-|	|	|   +-- geo.qpj
-|	|	|   +-- geo.shp
-|	|	|   +-- geo.shx
-|	|	|	
+|   |   |   +-- geo.cpg
+|   |   |   +-- geo.dbf
+|   |   |   +-- geo.prj
+|   |   |   +-- geo.qpj
+|   |   |   +-- geo.shp
+|   |   |   +-- geo.shx
+|   |   |	
 |   |   +-- lagunas_glaciares
-|	|	|   +-- geo.cpg
-|	|	|   +-- geo.dbf
-|	|	|   +-- geo.prj
-|	|	|   +-- geo.qpj
-|	|	|   +-- geo.shp
-|	|	|   +-- geo.shx
-|	|	|   +-- geo.xml
-|	|	|	
+|   |   |   +-- geo.cpg
+|   |   |   +-- geo.dbf
+|   |   |   +-- geo.prj
+|   |   |   +-- geo.qpj
+|   |   |   +-- geo.shp
+|   |   |   +-- geo.shx
+|   |   |   +-- geo.xml
+|   |   |	
 |   |   +-- mundo
 |   |   +-- oefa_od
-|	|	|   +-- geo.cpg
-|	|	|   +-- geo.dbf
-|	|	|   +-- geo.prj
-|	|	|   +-- geo.sbn
-|	|	|   +-- geo.sbx
-|	|	|   +-- geo.shp
-|	|	|   +-- geo.shx
-|	|	|   +-- geo.xml
-|	|	|	
+|   |   |   +-- geo.cpg
+|   |   |   +-- geo.dbf
+|   |   |   +-- geo.prj
+|   |   |   +-- geo.sbn
+|   |   |   +-- geo.sbx
+|   |   |   +-- geo.shp
+|   |   |   +-- geo.shx
+|   |   |   +-- geo.xml
+|   |   |	
 |   |   +-- ptar
-|	|	|   +-- geo.cpg
-|	|	|   +-- geo.dbf
-|	|	|   +-- geo.prj
-|	|	|   +-- geo.qpj
-|	|	|   +-- geo.shp
-|	|	|   +-- geo.shx
-|	|	|	
+|   |   |   +-- geo.cpg
+|   |   |   +-- geo.dbf
+|   |   |   +-- geo.prj
+|   |   |   +-- geo.qpj
+|   |   |   +-- geo.shp
+|   |   |   +-- geo.shx
+|   |   |	
 |   |   +-- red_vial
-|	|	|   +-- red_vial_departamental
-|	|	|   +-- red_vial_nacional
-|	|	|   +-- red_vial_vecinal
-|	|	|   +-- trochas
-|	|	|	
+|   |   |   +-- red_vial_departamental
+|   |   |   +-- red_vial_nacional
+|   |   |   +-- red_vial_vecinal
+|   |   |   +-- trochas
+|   |   |	
 |   |   +-- rios
 |   |   |   +-- amazonas
 |   |   |   |   +-- geo.cpg
