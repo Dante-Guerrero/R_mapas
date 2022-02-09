@@ -11,7 +11,7 @@ check = file.exists("data/mapas.RData")
 if(check == FALSE){
   source("auxiliares/cargador_mapas.R")
 }
-rm(check)
+rm(list = ls())
 
 load('data/mapas.RData')
 
