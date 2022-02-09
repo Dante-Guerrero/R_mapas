@@ -26,6 +26,13 @@ mx_data <- select(as.data.frame(mx), DEPARTAMENTO = NOMBDEP, PROVINCIA= NOMBPROV
 mx_geom <- st_geometry(mx)
 demarcacion_distritos <- st_sf(mx_data, geometry = mx_geom)
 
+## DEMARCACION OEFA POR OFICINA DESCONCENTRADA (OD)
+
+mx <- st_read("data/insumos/OEFA_OD/geo.shp")
+mx_data <- select(as.data.frame(mx), COD_OD, NOM_OD, ABREV_OD, AREA_KM, SHAPE_AREA, SHAPE_LEN)
+mx_geom <- st_geometry(mx)
+demarcacion_od <- st_sf(mx_data, geometry = mx_geom)
+
 ## DEMARCACION
 
 save(
@@ -33,6 +40,7 @@ save(
   demarcacion_departamentos,
   demarcacion_provincias,
   demarcacion_distritos,
+  demarcacion_od,
   file = "data/mapas/demarcacion.RData"
 )
 
@@ -43,5 +51,6 @@ rm(
   demarcacion_pais,
   demarcacion_departamentos,
   demarcacion_provincias,
-  demarcacion_distritos
+  demarcacion_distritos,
+  demarcacion_od
 )

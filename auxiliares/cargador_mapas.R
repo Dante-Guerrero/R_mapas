@@ -102,6 +102,7 @@ mapas <- list(
   'departamentos' = demarcacion_departamentos,
   'provincias' = demarcacion_provincias,
   'distritos' = demarcacion_distritos,
+  'od' = demarcacion_od,
   'volcanes' = volcanes,
   'rios' = rios,
   'lagunas_glaciares' = lagunas_glaciares,
