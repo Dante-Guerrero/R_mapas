@@ -1,14 +1,10 @@
 # R_mapas
 
-## </mark> Finalidad </endmark>
-
 Auxiliar para trabajar con mapas.
 
-## Uso del repositorio
+### Uso del repositorio
 
 [...]
-
-## Mantenimiento del repositorio
 
 ### Scripts de mantenimiento
 
