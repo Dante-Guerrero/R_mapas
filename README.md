@@ -40,53 +40,53 @@ R_mapas
 |   |   |   +-- geo.xml
 |   |   |	
 |   |   +-- anp
-|	|	|   +-- anp_nacional 
-|	|	|   |   +-- geo.cpg
-|	|	|	|   +-- geo.dbf
-|	|	|	|   +-- geo.lyr
-|	|	|	|   +-- geo.prj
-|	|	|	|   +-- geo.sbn
-|	|	|	|   +-- geo.sbx
-|	|	|	|   +-- geo.shp
-|	|	|	|   +-- geo.shx
-|	|	|	|   +-- geo.xml
-|	|	|	|
-|	|	|	+-- areas_de_conservacion_privada
-|	|	|	|   +-- geo.cpg
-|	|	|	|   +-- geo.dbf
-|	|	|	|   +-- geo.lyr
-|	|	|	|   +-- geo.prj
-|	|	|	|   +-- geo.sbn
-|	|	|	|   +-- geo.sbx
-|	|	|	|   +-- geo.shp
-|	|	|	|   +-- geo.shx
-|	|	|	|   +-- geo.xml
-|	|	|	|
-|	|	|	+-- areas_de_conservacion_regional
-|	|	|	|   +-- geo.cpg
-|	|	|	|   +-- geo.dbf
-|	|	|	|   +-- geo.lyr
-|	|	|	|   +-- geo.prj
-|	|	|	|   +-- geo.sbn
-|	|	|	|   +-- geo.sbx
-|	|	|	|   +-- geo.shp
-|	|	|	|   +-- geo.shx
-|	|	|	|   +-- geo.xml
-|	|	|	|
-|	|	|	+-- grillas
-|	|	|	+-- zonas_de_amortiguamiento
-|	|	|	|   +-- geo.cpg
-|	|	|	|   +-- geo.dbf
-|	|	|	|   +-- geo.lyr
-|	|	|	|   +-- geo.prj
-|	|	|	|   +-- geo.sbn
-|	|	|	|   +-- geo.sbx
-|	|	|	|   +-- geo.shp
-|	|	|	|   +-- geo.shx
-|	|	|	|   +-- geo.xml
-|	|	|	|
-|	|	|	+-- zonas_reservadas
-|	|	|	|   +-- geo.cpg
+|   |   |   +-- anp_nacional 
+|   |   |   |   +-- geo.cpg
+|   |   |   |   +-- geo.dbf
+|   |   |   |   +-- geo.lyr
+|   |   |   |   +-- geo.prj
+|   |   |   |   +-- geo.sbn
+|   |   |   |   +-- geo.sbx
+|   |   |   |   +-- geo.shp
+|   |   |   |   +-- geo.shx
+|   |   |   |   +-- geo.xml
+|   |   |   |
+|   |   |   +-- areas_de_conservacion_privada
+|   |   |   |   +-- geo.cpg
+|   |   |   |   +-- geo.dbf
+|   |   |   |   +-- geo.lyr
+|   |   |   |   +-- geo.prj
+|   |   |   |   +-- geo.sbn
+|   |   |   |   +-- geo.sbx
+|   |   |   |   +-- geo.shp
+|   |   |   |   +-- geo.shx
+|   |   |   |   +-- geo.xml
+|   |   |   |
+|   |   |   +-- areas_de_conservacion_regional
+|   |   |   |   +-- geo.cpg
+|   |   |   |   +-- geo.dbf
+|   |   |   |   +-- geo.lyr
+|   |   |   |   +-- geo.prj
+|   |   |   |   +-- geo.sbn
+|   |   |   |   +-- geo.sbx
+|   |   |   |   +-- geo.shp
+|   |   |   |   +-- geo.shx
+|   |   |   |   +-- geo.xml
+|   |   |   |
+|   |   |   +-- grillas
+|   |   |   +-- zonas_de_amortiguamiento
+|   |   |   |   +-- geo.cpg
+|   |   |   |   +-- geo.dbf
+|   |   |   |   +-- geo.lyr
+|   |   |   |   +-- geo.prj
+|   |   |   |   +-- geo.sbn
+|   |   |   |   +-- geo.sbx
+|   |   |   |   +-- geo.shp
+|   |   |   |   +-- geo.shx
+|   |   |   |   +-- geo.xml
+|   |   |   |
+|   |   |   +-- zonas_reservadas
+|   |   |   |   +-- geo.cpg
 |	|	|	|   +-- geo.dbf
 |	|	|	|   +-- geo.lyr
 |	|	|	|   +-- geo.prj
