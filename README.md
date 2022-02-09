@@ -764,11 +764,11 @@ R_mapas
 |   |   |       +-- geo.xml
 |   |   |   
 |   |   +-- volcanes
-|	|       +-- geo.dbf
-|	|       +-- geo.prj
-|	|       +-- geo.qpj
-|	|       +-- geo.shp
-|	|       +-- geo.shx
+|   |       +-- geo.dbf
+|   |       +-- geo.prj
+|   |       +-- geo.qpj
+|   |       +-- geo.shp
+|   |       +-- geo.shx
 |   |
 |   +-- mapas
 |   |   +-- calles
