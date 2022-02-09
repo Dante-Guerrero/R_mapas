@@ -2,15 +2,15 @@
 
 Auxiliar para trabajar con mapas.
 
-### Uso del repositorio
+## Uso del repositorio
 
 [...]
 
-### Scripts de mantenimiento
+## Scripts de mantenimiento
 
 [...]
 
-### Estructura del repositorio (completo)
+## Estructura del repositorio (completo)
 
 ```markdown
 R_mapas
