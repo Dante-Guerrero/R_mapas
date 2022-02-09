@@ -1,8 +1,20 @@
 # R_mapas
 
+## Finalidad
+
 Auxiliar para trabajar con mapas.
 
-## Estructura del repositorio (completo)
+## Uso del repositorio
+
+[...]
+
+## Mantenimiento del repositorio
+
+### Scripts de mantenimiento
+
+[...]
+
+### Estructura del repositorio (completo)
 
 ```markdown
 R_mapas
