@@ -448,9 +448,79 @@ R_mapas
 |   |   |	
 |   |   +-- red_vial
 |   |   |   +-- red_vial_departamental
+|   |   |   |   +--lineas
+|   |   |   |   |  +-- geo.cpg
+|   |   |   |   |  +-- geo.dbf
+|   |   |   |   |  +-- geo.idx
+|   |   |   |   |  +-- geo.prj
+|   |   |   |   |  +-- geo.sbn
+|   |   |   |   |  +-- geo.sbx
+|   |   |   |   |  +-- geo.shp
+|   |   |   |   |  +-- geo.shx
+|   |   |   |   |  +-- geo.xml
+|   |   |   |   |
+|   |   |   |   +--puntos
+|   |   |   |      +-- geo.cpg
+|   |   |   |      +-- geo.dbf
+|   |   |   |      +-- geo.prj
+|   |   |   |      +-- geo.sbn
+|   |   |   |      +-- geo.sbx
+|   |   |   |      +-- geo.shp
+|   |   |   |      +-- geo.shx
+|   |   |   |      +-- geo.xml
+|   |   |   |
 |   |   |   +-- red_vial_nacional
+|   |   |   |   +--lineas
+|   |   |   |   |  +-- geo.cpg
+|   |   |   |   |  +-- geo.dbf
+|   |   |   |   |  +-- geo.idx
+|   |   |   |   |  +-- geo.prj
+|   |   |   |   |  +-- geo.sbn
+|   |   |   |   |  +-- geo.sbx
+|   |   |   |   |  +-- geo.shp
+|   |   |   |   |  +-- geo.shp.xml
+|   |   |   |   |  +-- geo.shx
+|   |   |   |   |  +-- geo.xml
+|   |   |   |   |
+|   |   |   |   +--puntos
+|   |   |   |      +-- geo.cpg
+|   |   |   |      +-- geo.dbf
+|   |   |   |      +-- geo.idx
+|   |   |   |      +-- geo.prj
+|   |   |   |      +-- geo.sbn
+|   |   |   |      +-- geo.sbx
+|   |   |   |      +-- geo.shp
+|   |   |   |      +-- geo.shp.xml
+|   |   |   |      +-- geo.shx
+|   |   |   |
 |   |   |   +-- red_vial_vecinal
+|   |   |   |   +--lineas
+|   |   |   |   |  +-- geo.cpg
+|   |   |   |   |  +-- geo.dbf
+|   |   |   |   |  +-- geo.prj
+|   |   |   |   |  +-- geo.sbn
+|   |   |   |   |  +-- geo.sbx
+|   |   |   |   |  +-- geo.shp
+|   |   |   |   |  +-- geo.shx
+|   |   |   |   |  +-- geo.xml
+|   |   |   |   |
+|   |   |   |   +--puntos
+|   |   |   |      +-- geo.cpg
+|   |   |   |      +-- geo.dbf
+|   |   |   |      +-- geo.prj
+|   |   |   |      +-- geo.sbn
+|   |   |   |      +-- geo.sbx
+|   |   |   |      +-- geo.shp
+|   |   |   |      +-- geo.shx
+|   |   |   |      +-- geo.xml
+|   |   |   |
 |   |   |   +-- trochas
+|   |   |       +--geo.cpg
+|   |   |       +--geo.dbf
+|   |   |       +--geo.prj
+|   |   |       +--geo.qpj
+|   |   |       +--geo.shp
+|   |   |       +--geo.shx
 |   |   |	
 |   |   +-- rios
 |   |   |   +-- amazonas
@@ -820,6 +890,5 @@ R_mapas
 +-- actualizar_repositorio_en_git_hub.sh
 +-- README.md
 +-- main.Rmd
-
 ```
 
