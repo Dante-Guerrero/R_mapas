@@ -32,13 +32,13 @@ R_mapas
 |   +-- insumos
 |   |   +-- america_del_sur
 |   |   |   +-- geo.cpg
-|	|	|   +-- geo.dbf
-|	|	|   +-- geo.prj
-|	|	|   +-- geo.qpj
-|	|	|   +-- geo.shp
-|	|	|   +-- geo.shx
-|	|	|   +-- geo.xml
-|	|	|	
+|   |   |   +-- geo.dbf
+|   |   |   +-- geo.prj
+|   |   |   +-- geo.qpj
+|   |   |   +-- geo.shp
+|   |   |   +-- geo.shx
+|   |   |   +-- geo.xml
+|   |   |	
 |   |   +-- anp
 |	|	|   +-- anp_nacional 
 |	|	|   |   +-- geo.cpg
