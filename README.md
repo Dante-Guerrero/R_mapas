@@ -46,17 +46,117 @@ R_mapas
 |   |
 |   +-- mapas
 |   |   +-- calles
-|   |   +-- 
-|   |   +--
-|   |   +--
-|   |   +--
-|   |   +--
-|   |   +--
-|   |   +--
-|   |   +--
-|   |   +--
-|   |   +--
-|   |   +--
+|   |   |   +-- amazonas.RData 
+|   |   |   +-- ancash.RData
+|   |   |   +-- apurimac.RData
+|   |   |   +-- arequipa.RData
+|   |   |   +-- ayacucho.RData
+|   |   |   +-- cajamarca.RData
+|   |   |   +-- cusco.RData
+|   |   |   +-- huancavelica.RData
+|   |   |   +-- huanuco.RData
+|   |   |   +-- ica.RData
+|   |   |   +-- junin.RData
+|   |   |   +-- lalibertad.RData
+|   |   |   +-- lambayeque.RData
+|   |   |   +-- lima.RData
+|   |   |   +-- loreto.RData
+|   |   |   +-- madrededios.RData
+|   |   |   +-- moquegua.RData
+|   |   |   +-- pasco.RData
+|   |   |   +-- piura.RData
+|   |   |   +-- puno.RData
+|   |   |   +-- sanmartin.RData
+|   |   |   +-- tacna.RData
+|   |   |   +-- tumbes.RData
+|   |   |   +-- ucayali.RData
+|   |   |
+|   |   +-- red_vial_departamental_lineas
+|   |   |   +-- amazonas.RData 
+|   |   |   +-- ancash.RData
+|   |   |   +-- apurimac.RData
+|   |   |   +-- arequipa.RData
+|   |   |   +-- ayacucho.RData
+|   |   |   +-- cajamarca.RData
+|   |   |   +-- cusco.RData
+|   |   |   +-- huancavelica.RData
+|   |   |   +-- huanuco.RData
+|   |   |   +-- ica.RData
+|   |   |   +-- junin.RData
+|   |   |   +-- lalibertad.RData
+|   |   |   +-- lambayeque.RData
+|   |   |   +-- lima.RData
+|   |   |   +-- loreto.RData
+|   |   |   +-- madrededios.RData
+|   |   |   +-- moquegua.RData
+|   |   |   +-- pasco.RData
+|   |   |   +-- piura.RData
+|   |   |   +-- puno.RData
+|   |   |   +-- sanmartin.RData
+|   |   |   +-- tacna.RData
+|   |   |   +-- tumbes.RData
+|   |   |   +-- ucayali.RData
+|   |   |
+|   |   +-- red_vial_vecina_lineas
+|   |   |   +-- amazonas.RData 
+|   |   |   +-- ancash.RData
+|   |   |   +-- apurimac.RData
+|   |   |   +-- arequipa.RData
+|   |   |   +-- ayacucho.RData
+|   |   |   +-- cajamarca.RData
+|   |   |   +-- cusco.RData
+|   |   |   +-- huancavelica.RData
+|   |   |   +-- huanuco.RData
+|   |   |   +-- ica.RData
+|   |   |   +-- junin.RData
+|   |   |   +-- lalibertad.RData
+|   |   |   +-- lambayeque.RData
+|   |   |   +-- lima.RData
+|   |   |   +-- loreto.RData
+|   |   |   +-- madrededios.RData
+|   |   |   +-- moquegua.RData
+|   |   |   +-- pasco.RData
+|   |   |   +-- piura.RData
+|   |   |   +-- puno.RData
+|   |   |   +-- sanmartin.RData
+|   |   |   +-- tacna.RData
+|   |   |   +-- tumbes.RData
+|   |   |   +-- ucayali.RData
+|   |   |
+|   |   +-- rios
+|   |   |   +-- amazonas.RData 
+|   |   |   +-- ancash.RData
+|   |   |   +-- apurimac.RData
+|   |   |   +-- arequipa.RData
+|   |   |   +-- ayacucho.RData
+|   |   |   +-- cajamarca.RData
+|   |   |   +-- cusco.RData
+|   |   |   +-- huancavelica.RData
+|   |   |   +-- huanuco.RData
+|   |   |   +-- ica.RData
+|   |   |   +-- junin.RData
+|   |   |   +-- lalibertad.RData
+|   |   |   +-- lambayeque.RData
+|   |   |   +-- lima.RData
+|   |   |   +-- loreto.RData
+|   |   |   +-- madrededios.RData
+|   |   |   +-- moquegua.RData
+|   |   |   +-- pasco.RData
+|   |   |   +-- piura.RData
+|   |   |   +-- puno.RData
+|   |   |   +-- sanmartin.RData
+|   |   |   +-- tacna.RData
+|   |   |   +-- tumbes.RData
+|   |   |   +-- ucayali.RData
+|   |   |
+|   |   +-- demarcacion.RData
+|   |   +-- lago_titicaca.RData
+|   |   +-- lagunas_glaciares.RData
+|   |   +-- red_vial_departamental_puntos.RData
+|   |   +-- red_vial_nacional.RData
+|   |   +-- red_vial_trochas.RData
+|   |   +-- red_vial_vecinal_puntos.RData
+|   |   +-- volcanes.RData
 |   |
 |   +-- mapas.RData
 |

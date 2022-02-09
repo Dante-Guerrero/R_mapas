@@ -90,7 +90,7 @@ mapa_c <- mapa_c %>%
 graph <- ggplot(data=mapa, aes())+
   geom_sf(color="black", fill="greenyellow")+
   ggtitle('MAPA DEL PERÚ')+
-  theme_void()+
+  #theme_void()+
   theme(
     plot.title = element_text(hjust = 0.5)
     )+
