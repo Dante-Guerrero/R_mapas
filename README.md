@@ -18,7 +18,7 @@ El repositorio ha sido diseñado para funcionar de acuerdo con lo siguiente:
 
 ## Estructura del repositorio (completo)
 
-
+Una vez que se ha corrido el archivo `auxiliares\actualizar_data\descargar_insumos.R`, la estructura del repositorio debería verse de la siguiente manera: 
 
 ```markdown
 R_mapas
