@@ -6,11 +6,15 @@ Auxiliar para trabajar con mapas.
 
 [...]
 
+<mark> actualizar_repositorio_en_git_hub.sh</mark>
+
 ## Scripts de mantenimiento
 
 [...]
 
 ## Estructura del repositorio (completo)
+
+
 
 ```markdown
 R_mapas
@@ -305,7 +309,7 @@ R_mapas
 |   |   |   |   +-- geo.shx
 |   |   |   |   +-- geo.xml
 |   |   |   |
-|   |   |   +-- moquegua
+|   |   |   +-- moqueguas
 |   |   |   |   +-- geo.cpg
 |   |   |   |   +-- geo.dbf
 |   |   |   |   +-- geo.prj
