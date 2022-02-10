@@ -1,6 +1,6 @@
 # R_mapas
 
-Este repositorio facilita la creación de mapas con paquetes y librerías de R como `sf`, `rayshadeR` y `ggplot2`. 
+Este repositorio facilita la creación de mapas con paquetes y librerías de R como [`sf`](www.facebook.com), `rayshadeR` y `ggplot2`. 
 
 ## Uso recomendado del repositorio
 
