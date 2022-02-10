@@ -6,7 +6,7 @@ Auxiliar para trabajar con mapas.
 
 [...]
 
-<mark> actualizar_repositorio_en_git_hub.sh</mark>
+El archivo `actualizar_repositorio_en_git_hub.sh` permite 
 
 ## Scripts de mantenimiento
 
