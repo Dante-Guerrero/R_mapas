@@ -2,11 +2,15 @@
 
 Auxiliar para trabajar con mapas.
 
-## Uso del repositorio
+## Uso recomendado del repositorio
 
-[...]
+El repositorio ha sido diseñado para funcionar de acuerdo con lo siguiente:
 
-El archivo `actualizar_repositorio_en_git_hub.sh` permite 
+- Se recomienda que el usuario trabaje desde el archivo `main.Rmd` u otros archivos .R ó .Rmd alojados en el directorio principal.
+- Los scripts de apoyo -escritos en archivos .R- se alojan en la carpeta `auxiliares`.
+- Las bases de datos y otros archivos que contengan información a ser procesada -como las colecciones .shp y los archivos .RData- son almacenados en la carpeta `data`.
+- Existe un archivo `.gitignore` que evita que ciertos formatos se cuelen en el repositorio remoto. 
+- Finalmente, para los usuarios de git, el archivo `actualizar_repositorio_en_git_hub.sh` permite actualizar fácilmente el repositorio.
 
 ## Scripts de mantenimiento
 
