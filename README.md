@@ -1,6 +1,6 @@
 # R_mapas
 
-Auxiliar para trabajar con mapas.
+Este repositorio facilita la creación de mapas con paquetes y librerías de R como `sf`, `rayshadeR` y `ggplot2`. 
 
 ## Uso recomendado del repositorio
 
@@ -14,7 +14,7 @@ El repositorio ha sido diseñado para funcionar de acuerdo con lo siguiente:
 
 ## Scripts de mantenimiento
 
-[...]
+Uno de los aspectos más valiosos de este repositorio son los archivos .RData que se alojan en la carpeta `data\mapas` y que contienen tablas con información geográfica. Para salvaguardar la vigencia de esta información, el repositorio contiene archivos .R alojados en la carpeta `auxiliares\actualizar_data` que facilitan el mantenimiento de los archivos .RData. 
 
 ## Estructura del repositorio (completo)
 
